@@ -1,0 +1,3 @@
+kata_name:
+  type: str
+  help: What is the name of the kata ? Use CamelCase
