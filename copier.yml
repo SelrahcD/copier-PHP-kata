@@ -7,3 +7,9 @@ test_run_logger:
   type: bool
   help: Do you want to use a test run logger ?
   default: yes
+
+tell_about_test_run_logger:
+  when: "{% if test_run_logger %}true{% endif %}"
+  type: bool
+  help: Do you want to talk about the test run logger in the Readme file ?
+  default: "{% if test_run_logger %}yes{% endif %}"
