@@ -1,7 +1,7 @@
 kata_name:
   type: str
   help: What is the name of the kata ? Use CamelCase
-  default: RomanNumerals
+  placeholder: RomanNumerals
 
 test_run_logger:
   type: bool
