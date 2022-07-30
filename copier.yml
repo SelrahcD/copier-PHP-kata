@@ -13,3 +13,8 @@ tell_about_test_run_logger:
   type: bool
   help: Do you want to talk about the test run logger in the Readme file ?
   default: "{% if test_run_logger %}yes{% endif %}"
+
+include_sample_test:
+  type: bool
+  help: Do you want to include a sample test ?
+  default: yes
