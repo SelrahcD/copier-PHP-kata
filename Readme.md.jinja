@@ -9,9 +9,13 @@
 
 Run `composer install` to get dependencies.
 
+{% if include_docker %}Alternatively, you can install dependencies using docker with `docker-compose run --rm php composer install`.{% endif %}
+
 ## Run tests
 
 You can run tests with PhpUnit using `./vendor/bin/phpunit`.
+
+{% if include_docker %}If you prefer using docker you can run tests with `docker-compose run --rm php ./vendor/bin/phpunit`.{% endif %}
 
 {% if tell_about_test_run_logger %}A Test Run Logger is installed and logs all test runs. At the end of the kata you
 can take a moment to review the logs and see if you see strange patterns. To make it easier

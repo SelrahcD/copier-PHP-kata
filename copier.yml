@@ -18,3 +18,8 @@ include_sample_test:
   type: bool
   help: Do you want to include a sample test ?
   default: yes
+
+include_docker:
+  type: bool
+  help: Do you want to add docker to this repo ?
+  default: yes
