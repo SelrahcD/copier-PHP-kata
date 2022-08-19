@@ -23,3 +23,8 @@ include_docker:
   type: bool
   help: Do you want to add docker to this repo ?
   default: yes
+
+include_tcr_script:
+  type: bool
+  help: Do you want to include a tcr script to this repo ?
+  default: yes
