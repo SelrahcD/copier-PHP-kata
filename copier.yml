@@ -28,3 +28,8 @@ include_tcr_script:
   type: bool
   help: Do you want to include a tcr script to this repo ?
   default: yes
+
+include_mobsh:
+  type: bool
+  help: Do you want to talk about Mob.sh ?
+  default: yes

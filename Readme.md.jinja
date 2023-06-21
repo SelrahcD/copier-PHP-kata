@@ -18,7 +18,12 @@ If you plan on running the test with docker, run the `./install` command first.
 Run `composer install` to get dependencies.
 
 {% if include_docker %}Alternatively, you can install dependencies using docker with `docker-compose run --rm php composer install`.{% endif %}
+{% if include_mobsh %}
+### Ensemble Programming
 
+In the case we want to do Ensemble programming, also known as Mob Programming, and each of us want to use it's own setup, or because we are working remotly, you can install [mob.sh](https://mob.sh/).
+Mob.sh will help us to do the code hand over via git.
+{% endif %}
 ## Run tests
 
 You can run tests with PhpUnit using `./vendor/bin/phpunit`.
