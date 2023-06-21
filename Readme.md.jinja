@@ -7,6 +7,14 @@
 
 ## Getting started
 
+{% if include_docker %}
+### With Docker
+
+If you plan on running the test with docker, run the `./install` command first.
+{% endif %}
+
+### Install dependencies
+
 Run `composer install` to get dependencies.
 
 {% if include_docker %}Alternatively, you can install dependencies using docker with `docker-compose run --rm php composer install`.{% endif %}
